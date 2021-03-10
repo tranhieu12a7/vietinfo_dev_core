@@ -2,7 +2,7 @@ name: vietinfo_dev_core
 description: A new flutter plugin project.
 version: 0.0.5
 #author: Dev test
-homepage: https://github.com/tranhieu12a7/vietinfo/tree/main/vietinfo_dev_core
+homepage: https://github.com/tranhieu12a7/vietinfo_dev_core
 
 
 environment:
