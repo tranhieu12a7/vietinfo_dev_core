@@ -15,8 +15,13 @@ class CoreSizeResponse extends CoreSizeDataSource{
 
   @override
   double getFontSize(double fontSize) {
-    var aaa=screenSize.width * (fontSize / 350);
-    return aaa;
+    if(screenSize.width<screenSize.height){
+      var fonSize=screenSize.width * (fontSize / 350);
+      return fonSize;
+    }
+    var fonSize=screenSize.height * (fontSize / 350);
+    return fonSize;
+
   }
 
 }
