@@ -17,3 +17,6 @@
 ## [0.0.5] - TODO: Add release date 2021/01/19.
 * remove carousel_slider: ^2.3.1
 * vietinfo_dev_core.dart update code.
+
+## [0.1.0] - TODO: Add release date 2021/01/19.
+* TODO: Describe initial release.

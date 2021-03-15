@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e001fb8e-f372-4cee-85f2-39ab941f98de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/core_size.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/core_size.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +26,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../code/TPThuDuc/sources/tpthuduccongchuc" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -50,10 +48,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1615427108009">
+    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1615778828281">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1615427108009" />
+    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1615778828281" />
     <state width="1557" height="221" key="GridCell.Tab.0.bottom" timestamp="1615349327572">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
