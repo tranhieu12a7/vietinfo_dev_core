@@ -1,6 +1,6 @@
 name: vietinfo_dev_core
 description: A new flutter plugin project.
-version: 0.1.0
+version: 0.1.1
 #author: Dev test
 homepage: https://github.com/tranhieu12a7/vietinfo_dev_core
 
@@ -16,6 +16,12 @@ dependencies:
   http: ^0.12.2
   #dependencies shared_preferences
   shared_preferences: ^0.5.12+4
+  downloads_path_provider:
+  path_provider:
+  dio:
+  permission_handler:
+  percent_indicator:
+
 
 dev_dependencies:
   flutter_test:

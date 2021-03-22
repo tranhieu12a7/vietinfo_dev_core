@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vietinfo_dev_core/vietinfo_dev_core.dart';
 
 class WidgetScreen extends StatelessWidget {
   final Widget child;
