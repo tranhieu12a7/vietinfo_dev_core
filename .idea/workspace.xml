@@ -20,18 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e001fb8e-f372-4cee-85f2-39ab941f98de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/core/path_locals.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/download_files/blocs/bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/download_files/services/api_services.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/download_files/widgets/widget_download_file.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vietinfo_dev_core.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vietinfo_dev_core.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/widget_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/widget_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/path_locals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/path_locals.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/download_files/services/api_services.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/download_files/services/api_services.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +52,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../code/FlutterModules/module_dichvucong" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -99,10 +90,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1616151432560" />
-    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1616381480396">
+    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1616402146797">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1616381480396" />
+    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1616402146797" />
     <state width="1557" height="204" key="GridCell.Tab.0.bottom" timestamp="1616382652278">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

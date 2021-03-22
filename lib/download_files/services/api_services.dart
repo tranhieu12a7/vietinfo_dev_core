@@ -7,21 +7,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:vietinfo_dev_core/core/path_locals.dart';
 
 class FileService {
-  checkFile(String urlFile) async {
-    try {
-      var temp = urlFile.split('/');
-      String fileName = temp[temp.length - 1];
-      var tempDir =
-          await PathFileLocals().getPathLocal(ePathType: EPathType.Download);
-      File file = new File("${tempDir.path}/${fileName}");
-      if (await PathFileLocals().checkExistFile(path: file.path) == true) {
-        return true;
-      }
-      return false;
-    } catch (error) {
-      return false;
-    }
-  }
+
 
   Future<String> downloadFile(
       {@required String urlFile,
@@ -56,12 +42,11 @@ class FileService {
         // Directory tempDir = await getApplicationDocumentsDirectory();
         tempPath = tempDir.path;
       }
-      var status = await Permission.storage.status;
-      if (!status.isGranted) {
-        await Permission.storage.request();
-      }
-      File file = new File("${tempPath}/${fileName}");
-      if (await checkFile(file.path)==true) {
+
+      File file = new File("${tempDir.path}/${fileName}");
+
+      if (await PathFileLocals().checkExistFile(path:file.path) == true) {
+        // File file = new File("${tempPath}/${fileName}");
         return file.path;
       }
       else {
@@ -80,9 +65,11 @@ class FileService {
                 receiveTimeout: 0),
             data: param,
           );
-        } else {
-          response = await dio.get(
-            URL.contains(linkDownload ?? "") ? URL : linkDownload ?? "" + URL,
+        }
+        else {
+          var link= URL.contains(linkDownload ?? "") ? URL : linkDownload + URL ;
+
+          response = await dio.get(link,
             onReceiveProgress: (received, total) async {
               // String dataProgress = (received / total * 100).toStringAsFixed(0);
               double dataProgress = (received / total * 100);
@@ -95,6 +82,13 @@ class FileService {
                 receiveTimeout: 0),
           );
         }
+
+        var status = await Permission.storage.status;
+        if (!status.isGranted) {
+          await Permission.storage.request();
+        }
+        File file = new File("${tempPath}/${fileName}");
+
         file.writeAsBytesSync(response.data);
       }
       return file.path;
