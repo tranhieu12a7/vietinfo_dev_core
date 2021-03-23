@@ -2,38 +2,49 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:vietinfo_dev_core/core/path_locals.dart';
 import 'package:vietinfo_dev_core/download_files/blocs/bloc.dart';
+import 'package:vietinfo_dev_core/download_files/models/model_download.dart';
 import 'package:vietinfo_dev_core/vietinfo_dev_core.dart';
 
-class WidgetDownloadFile extends StatefulWidget {
-  Function childChange;
-  String urlFile;
-  Function(double) onChangeValue;
+class WidgetDownloadFileMain extends StatelessWidget {
+  final String urlFile;
+  final AsyncWidgetBuilder<ModelDownload> builder;
 
-  WidgetDownloadFile({Key key, this.childChange, this.onChangeValue,this.urlFile})
-      : super(key: key);
+  const WidgetDownloadFileMain({Key key, this.urlFile,this.builder}) : super(key: key);
 
   @override
-  _WidgetDownloadFileState createState() =>
-      _WidgetDownloadFileState(
-          onChangeValue: this.onChangeValue, childChange: this.childChange);
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      child: WidgetDownloadFile(builder: builder,urlFile: urlFile,),
+      create: (context) => DownloadFileBloc(),
+    );
+  }
+}
+
+class WidgetDownloadFile extends StatefulWidget {
+  final String urlFile;
+  final AsyncWidgetBuilder<ModelDownload> builder;
+
+  WidgetDownloadFile({Key key, this.urlFile, this.builder}) : super(key: key);
+
+  @override
+  _WidgetDownloadFileState createState() => _WidgetDownloadFileState();
 }
 
 class _WidgetDownloadFileState extends State<WidgetDownloadFile> {
-  final Function(double) onChangeValue;
-  final Function childChange;
-  DownloadFileBloc bloc;
-
-  _WidgetDownloadFileState({this.onChangeValue, this.childChange});
+  DownloadFileBloc bloc ;
+  ModelDownload modelDownload;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    bloc = DownloadFileBloc();
+    bloc=BlocProvider.of<DownloadFileBloc>(context);
     VietinfoDevCore.downloadFileBloc = bloc;
+    modelDownload = new ModelDownload(value: 0.0, urlFile: widget.urlFile);
   }
 
   @override
@@ -48,41 +59,46 @@ class _WidgetDownloadFileState extends State<WidgetDownloadFile> {
       var temp = urlFile.split('/');
       String fileName = temp[temp.length - 1];
       var tempDir =
-      await PathFileLocals().getPathLocal(ePathType: EPathType.Download);
+          await PathFileLocals().getPathLocal(ePathType: EPathType.Download);
       File file = new File("${tempDir.path}/${fileName}");
       if (await PathFileLocals().checkExistFile(path: file.path) == true) {
         return true;
       }
       return false;
-    }
-    catch (error) {
+      return false;
+    } catch (error) {
       return false;
     }
   }
 
-
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
-        stream: bloc.streamController.stream,
-        builder: (context, snapshot) {
-          print("${snapshot.data}");
-          if (snapshot.hasData && snapshot.data != null) {
-            onChangeValue?.call(snapshot.data);
-            return childChange.call(snapshot.data);
+    print("WidgetDownloadFile");
+    // if (modelDownload == null)
+    //   modelDownload = new ModelDownload(value: 0.0, urlFile: widget.urlFile);
+    return FutureBuilder(
+      future: checkFile(modelDownload.urlFile),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          if (snapshot.data)
+            return widget.builder.call(
+                context,
+                AsyncSnapshot<ModelDownload>.withData(
+                    ConnectionState.done, modelDownload.clone(value: 100.0)));
+          else {
+            return StreamBuilder(
+              builder: widget.builder,
+              stream: bloc.streamController.stream,
+            );
+            // return  childChange.call(modelDownload.clone(value: 0.0));
           }
-          // return  ( checkFile(widget.urlFile)==true)? childChange.call(100.0):childChange.call(0.0);
-          return FutureBuilder(
-            future:  checkFile(widget.urlFile),
-            builder: (context, snapshot) {
-              if (snapshot.hasData)
-                return snapshot.data ? childChange.call(100.0) : childChange.call(
-                    0.0);
-              return CircularProgressIndicator(
-                strokeWidth: 1.0,
-              );
-            },
-          );
-        });
+        }
+        return CircularProgressIndicator(
+          strokeWidth: 1.0,
+        );
+      },
+    );
+
+
   }
 }

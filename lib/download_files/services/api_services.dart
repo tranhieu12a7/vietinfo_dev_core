@@ -45,7 +45,7 @@ class FileService {
 
       File file = new File("${tempDir.path}/${fileName}");
 
-      if (await PathFileLocals().checkExistFile(path:file.path) == true) {
+      if (await PathFileLocals().checkExistFile(path:file.path) == true && file.lengthSync()>0) {
         // File file = new File("${tempPath}/${fileName}");
         return file.path;
       }

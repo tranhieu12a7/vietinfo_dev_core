@@ -2,32 +2,34 @@ import 'dart:async';
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:vietinfo_dev_core/core/path_locals.dart';
+import 'package:vietinfo_dev_core/download_files/models/model_download.dart';
 import 'package:vietinfo_dev_core/download_files/services/api_services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class DownloadFileBloc {
-  StreamController<double> streamController;
+class DownloadFileBloc extends Cubit<Object> {
+  StreamController<ModelDownload> streamController=StreamController<ModelDownload>.broadcast();
 
-  Function( String urlFile, {String linkDownload, String path})
+  Function( {String linkDownload, String path,ModelDownload modelDownload})
       startDownload;
 
   FileService fileService;
 
-  DownloadFileBloc() {
+  DownloadFileBloc() : super(Object()) {
     fileService = FileService();
-    streamController = StreamController<double>.broadcast();
 
     startDownload =
-        (String urlFile, {String linkDownload, String path}) async {
+        ({String linkDownload, String path,ModelDownload modelDownload}) async {
 
       var pathResult= await fileService.downloadFile(
-          urlFile: urlFile,
+          urlFile: modelDownload.urlFile,
           linkDownload: linkDownload,
           pathFolderFile: path,
           showDownloadProgress: (value) {
-            streamController.sink.add(value ?? 0);
+            streamController.sink.add(modelDownload.clone(value: value??0.0) );
+
           });
       if(pathResult!=null){
-        streamController.sink.add(100.0);
+        streamController.sink.add(modelDownload.clone(value: 100.0) );
       }
       return pathResult;
     };

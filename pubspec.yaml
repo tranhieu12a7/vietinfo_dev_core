@@ -21,6 +21,7 @@ dependencies:
   dio:
   permission_handler:
   percent_indicator:
+  flutter_bloc:
 
 
 dev_dependencies:
