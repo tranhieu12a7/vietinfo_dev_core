@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e001fb8e-f372-4cee-85f2-39ab941f98de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/download_files/models/model_download.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/download_files/blocs/bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/download_files/blocs/bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/download_files/services/api_services.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/download_files/services/api_services.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/download_files/widgets/widget_download_file.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/download_files/widgets/widget_download_file.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/download_files/blocs/bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/download_files/models/model_download.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/download_files/services/api_services.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/download_files/widgets/widget_download_file.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/vietinfo_dev_core.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vietinfo_dev_core.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
@@ -35,7 +40,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[D1AGAD1781012268]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.1.103:4444]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -47,18 +52,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pY3QjGCf7gh1tKQxyg9Ogle2fv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../code/FlutterModules/module_dichvucong" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../download_file" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -91,31 +103,42 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="537" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616487750493">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="537" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1616487750493" />
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616151432560">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1616151432560" />
-    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1616409563315">
+    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1616487358201">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1616409563315" />
-    <state width="1557" height="204" key="GridCell.Tab.0.bottom" timestamp="1616485963066">
+    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1616487358201" />
+    <state width="1340" height="189" key="GridCell.Tab.0.bottom" timestamp="1616486569788">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="204" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1616485963066" />
-    <state width="1557" height="204" key="GridCell.Tab.0.center" timestamp="1616485963066">
+    <state width="1340" height="189" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1616486569788" />
+    <state width="1340" height="189" key="GridCell.Tab.0.center" timestamp="1616486569788">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="204" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1616485963066" />
-    <state width="1557" height="204" key="GridCell.Tab.0.left" timestamp="1616485963066">
+    <state width="1340" height="189" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1616486569788" />
+    <state width="1340" height="189" key="GridCell.Tab.0.left" timestamp="1616486569788">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="204" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1616485963066" />
-    <state width="1557" height="204" key="GridCell.Tab.0.right" timestamp="1616485963066">
+    <state width="1340" height="189" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1616486569788" />
+    <state width="1340" height="189" key="GridCell.Tab.0.right" timestamp="1616486569788">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="204" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1616485963066" />
+    <state width="1340" height="189" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1616486569788" />
+    <state x="286" y="9" key="SettingsEditor" timestamp="1616486590657">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="286" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1616486590657" />
     <state x="507" y="163" width="585" height="534" key="find.popup" timestamp="1616473950699">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
