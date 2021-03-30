@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:vietinfo_dev_core/core/core_size.dart';
 import 'package:vietinfo_dev_core/core/shared_prefs.dart';
+import 'package:vietinfo_dev_core/network_api/network_response.dart';
+
+import 'network_api/network_datasource.dart';
 
 export 'package:vietinfo_dev_core/network_api/network_datasource.dart';
 export 'package:vietinfo_dev_core/network_api/network_response.dart';
@@ -16,6 +19,7 @@ export 'package:vietinfo_dev_core/core/shared_prefs.dart';
 class VietinfoDevCore {
 
   static CoreSizeDataSource core;
+  static NetworkDataSource networkDataSource;
 
   static const MethodChannel _channel =
       const MethodChannel('vietinfo_dev_core');
@@ -27,5 +31,6 @@ class VietinfoDevCore {
   static init(BuildContext context ){
     core = CoreSizeResponse(context);
     SharedPrefs.initializer();
+    networkDataSource=NetworkResponse(timeLimit: 15);
   }
 }
