@@ -1,5 +1,7 @@
 package com.example.vietinfo_dev_core;
 
+import android.os.Environment;
+
 import androidx.annotation.NonNull;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
@@ -27,11 +29,17 @@ public class VietinfoDevCorePlugin implements FlutterPlugin, MethodCallHandler {
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("getPlatformVersion")) {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
-    } else {
+    }
+    else if (call.method.equals("getDownloadsDirectory")) {
+      result.success(getDownloadsDirectory());
+    }
+    else {
       result.notImplemented();
     }
   }
-
+  private String getDownloadsDirectory() {
+    return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath();
+  }
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
     channel.setMethodCallHandler(null);

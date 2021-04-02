@@ -1,8 +1,7 @@
 
 import 'dart:io';
-
-import 'package:downloads_path_provider/downloads_path_provider.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:vietinfo_dev_core/path_provider/downloads_path_provider.dart';
 
 enum EPathType{
   cache,
