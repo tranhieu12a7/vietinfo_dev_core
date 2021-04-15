@@ -19,7 +19,7 @@ class PathFileLocals{
       if (!status.isGranted) {
         await Permission.storage.request();
       }
-      if (ePathType == EPathType.Download) {
+      if (ePathType == EPathType.Download && Platform.isAndroid) {
         // pathDir = await DownloadsPathProvider.downloadsDirectory;
         // pathDir =( await getExternalStorageDirectories(type: StorageDirectory.downloads)).first;
         pathDir = await DownloadsPathProvider.downloadsDirectory;
