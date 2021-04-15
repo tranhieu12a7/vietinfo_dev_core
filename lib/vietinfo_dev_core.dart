@@ -15,6 +15,7 @@ export 'package:vietinfo_dev_core/widgets/widget_screen.dart';
 
 export 'package:shared_preferences/shared_preferences.dart';
 export 'package:vietinfo_dev_core/core/shared_prefs.dart';
+export 'package:vietinfo_dev_core/core/path_locals.dart';
 
 
 class VietinfoDevCore {
