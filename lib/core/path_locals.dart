@@ -1,6 +1,7 @@
 
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:vietinfo_dev_core/path_provider/downloads_path_provider.dart';
 
 enum EPathType{
@@ -13,6 +14,11 @@ class PathFileLocals{
   Future<Directory> getPathLocal({EPathType ePathType}) async {
     Directory pathDir;
     try {
+
+      var status = await Permission.storage.status;
+      if (!status.isGranted) {
+        await Permission.storage.request();
+      }
       if (ePathType == EPathType.Download) {
         // pathDir = await DownloadsPathProvider.downloadsDirectory;
         // pathDir =( await getExternalStorageDirectories(type: StorageDirectory.downloads)).first;

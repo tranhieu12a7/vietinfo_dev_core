@@ -23,26 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e001fb8e-f372-4cee-85f2-39ab941f98de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/example/vietinfo_dev_core/VietinfoDevCorePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/example/vietinfo_dev_core/VietinfoDevCorePlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/core_size.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/core_size.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftVietinfoDevCorePlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftVietinfoDevCorePlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/path_locals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/path_locals.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/vietinfo_dev_core.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vietinfo_dev_core.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/widget_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/widget_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vietinfo_dev_core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vietinfo_dev_core.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[29c7da5e7d04]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PDAGAA48B0305624]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -121,10 +124,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1616151432560" />
-    <state x="678" y="223" key="FileChooserDialogImpl" timestamp="1617354062684">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="565" y="184" key="FileChooserDialogImpl" timestamp="1617359999535">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1616487358201" />
+    <state x="565" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1617359999535" />
     <state x="678" y="223" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617354062684" />
     <state width="1340" height="189" key="GridCell.Tab.0.bottom" timestamp="1616489078953">
       <screen x="0" y="0" width="1600" height="860" />
@@ -142,10 +145,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1340" height="189" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1616489078952" />
-    <state x="286" y="9" key="SettingsEditor" timestamp="1616486590657">
+    <state x="286" y="9" key="SettingsEditor" timestamp="1617360007488">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="286" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1616486590657" />
+    <state x="286" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1617360007488" />
     <state x="507" y="163" width="585" height="534" key="find.popup" timestamp="1616473950699">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
